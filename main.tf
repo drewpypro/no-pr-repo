@@ -5,4 +5,6 @@ resource "aws_instance" "web" {
   tags = {
     Name = "HelloWorld"
   }
+
+  associate_public_ip_address = true
 }
